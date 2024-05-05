@@ -2,7 +2,7 @@
 
 ## Introduction:
 
-The provided Python code addresses the problem of image analysis, particularly focusing on color detection and contour identification. This problem is prevalent in various domains, including medical diagnostics, quality control in manufacturing, and object recognition in computer vision. By analyzing images, the code aims to extract meaningful information, such as the presence of specific colors or shapes, which can be used for further analysis or decision-making processes.
+The task at hand addresses the problem of image analysis, particularly focusing on color detection and contour identification. This problem is prevalent in various domains, including medical diagnostics, quality control in manufacturing, and object recognition in computer vision. By analyzing images, the code aims to extract meaningful information, such as the presence of specific colors or shapes, which can be used for further analysis or decision-making processes.
 
 The primary objective of the code is to process images, detect specific colors within them, identify contours representing objects or regions of interest, and ultimately generate analysis results based on these detections. This process involves several steps, including image preprocessing, color space definition, contour detection, and result generation.
 
