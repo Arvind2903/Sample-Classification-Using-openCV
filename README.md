@@ -2,9 +2,7 @@
 
 ## Introduction:
 
-The task at hand addresses the problem of image analysis, particularly focusing on color detection and contour identification. This problem is prevalent in various domains, including medical diagnostics, quality control in manufacturing, and object recognition in computer vision. By analyzing images, the code aims to extract meaningful information, such as the presence of specific colors or shapes, which can be used for further analysis or decision-making processes.
-
-The primary objective of the code is to process images, detect specific colors within them, identify contours representing objects or regions of interest, and ultimately generate analysis results based on these detections. This process involves several steps, including image preprocessing, color space definition, contour detection, and result generation.
+The objective was to categorize samples as positive or negative based on color masking. When a sample (e.g., RT-qPCR or any biosample) undergoes testing, it is treated with a dye that changes its color to pink or yellow, indicating its positivity or negativity for a specific reagent. The imaging system, operated via an Arduino, captures images of the test tubes containing the samples. Subsequently, a script is employed to process these images immediately after capture. This script employs color masking techniques to isolate the portion of the test tube containing the sample. By analyzing the color intensity of this portion, a score is computed, indicating the degree of pinkness or yellowness. Based on predefined thresholds, the sample is then classified as positive or negative.\\
 
 Now, let's dive into the details of the Python code and how it accomplishes these tasks.
 
