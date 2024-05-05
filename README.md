@@ -4,35 +4,7 @@
 
 The objective was to categorize samples as positive or negative based on color masking. When a sample (e.g., RT-qPCR or any biosample) undergoes testing, it is treated with a dye that changes its color to pink or yellow, indicating its positivity or negativity for a specific reagent. The imaging system, operated via an Arduino, captures images of the test tubes containing the samples. Subsequently, a script is employed to process these images immediately after capture. This script employs color masking techniques to isolate the portion of the test tube containing the sample. By analyzing the color intensity of this portion, a score is computed, indicating the degree of pinkness or yellowness. Based on predefined thresholds, the sample is then classified as positive or negative.
 
-Now, let's dive into the details of the Python code and how it accomplishes these tasks.
-
-
-## Function: Test
-
-This function is designed to analyze an image for specific colors and contours, providing scores based on the detected colors. Let's break down its components:
-
-### Inputs:
-
-- `path`: The file path of the image to be analyzed.
-- `names`: A list of names associated with each sample being analyzed.
-
-### Functionality:
-
-1. **Read Image and Data:** The function reads the image from the specified path and retrieves data from a CSV file named "temp.csv".
-   
-2. **Define Color Spaces:** It defines specific color spaces and boundaries for analysis, including colors, boundaries, and spaces.
-
-3. **Define Supporting Functions:** Several supporting functions are defined to facilitate analysis, including functions to calculate Mahalanobis distance, find tubes, validate contours, compute scores, and get expected pixel values.
-
-4. **Analyze Image:** The image is cropped to specific regions of interest, and color analysis is performed on these regions. Contours are detected, and scores are computed based on detected colors.
-
-5. **Generate Results:** The analysis results, including scores, are saved to a CSV file named "OmiXCVDResults1.csv".
-
-### Output:
-
-- **Analysis Results:** The function outputs analysis results in the form of CSV files containing scores for each sample.
-
----
+Now, let's analyze the code in detail:
 
 ## Supporting Functions:
 
