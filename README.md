@@ -30,6 +30,3 @@ The analysis process involves several steps:
 
 ---
 
-## Conclusion:
-
-The `Test` function provides a comprehensive solution for analyzing images, detecting specific colors, and generating analysis results. It utilizes various techniques such as color space definition, Mahalanobis distance calculation, contour detection, and score computation to achieve accurate analysis results.
