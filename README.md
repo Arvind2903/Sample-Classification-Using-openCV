@@ -4,8 +4,6 @@
 
 The objective was to categorize samples as positive or negative based on color masking. When a sample (e.g., RT-qPCR or any biosample) undergoes testing, it is treated with a dye that changes its color to pink or yellow, indicating its positivity or negativity for a specific reagent. The imaging system, operated via an Arduino, captures images of the test tubes containing the samples. Subsequently, a script is employed to process these images immediately after capture. This script employs color masking techniques to isolate the portion of the test tube containing the sample. By analyzing the color intensity of this portion, a score is computed, indicating the degree of pinkness or yellowness. Based on predefined thresholds, the sample is then classified as positive or negative.
 
-Now, let's analyze the code in detail:
-
 ## Supporting Functions:
 
 Several supporting functions are defined within the `Test` function to facilitate image analysis. Here's a brief overview of each:
